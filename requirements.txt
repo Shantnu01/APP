@@ -1,5 +1,5 @@
 # RepoGuard Core & Desktop Dependencies
-# Course: AA1 - Advanced Programming Practices
+# Course: Advanced Programming Practices | Section: H2
 # Authors: Shantnu, Arya Agrawal, Raiyan Kamal
 
 pillow==10.2.0

@@ -4,10 +4,10 @@
 [![Java Version](https://img.shields.io/badge/Java-JDK%2011%2B-red.svg)](https://openjdk.org)
 [![Database](https://img.shields.io/badge/SQLite-3-lightgrey.svg)](https://sqlite.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Academic Project](https://img.shields.io/badge/Course-AA1%20Advanced%20Programming%20Practices-purple.svg)]()
+[![Academic Project](https://img.shields.io/badge/Course-Advanced%20Programming%20Practices%20(Section%20H2)-purple.svg)]()
 
 > **Academic Project Submission**  
-> **Course:** AA1 &mdash; Advanced Programming Practices  
+> **Course:** Advanced Programming Practices &mdash; **Section:** H2  
 > **Faculty Guide:** Dr. Rajesh Kannan  
 > **Development Team:**
 > - **Shantnu** (Team Lead & Core Backend Architect)
@@ -158,4 +158,4 @@ python -m unittest discover -s tests
 ---
 
 ## 📜 Academic Integrity & Disclaimer
-This project was developed strictly for academic demonstration in **Course AA1 - Advanced Programming Practices** under the guidance of **Dr. Rajesh Kannan**. It reports known published CVE and GHSA advisories from the OSV database and is designed to teach secure software engineering, multi-threading, inter-language process integration, and data visualization.
+This project was developed strictly for academic demonstration in **Advanced Programming Practices (Section H2)** under the guidance of **Dr. Rajesh Kannan**. It reports known published CVE and GHSA advisories from the OSV database and is designed to teach secure software engineering, multi-threading, inter-language process integration, and data visualization.

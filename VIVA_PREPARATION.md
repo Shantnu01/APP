@@ -1,6 +1,6 @@
 # 🎓 RepoGuard &mdash; Quick Viva & Demo Preparation Guide
 
-**Course:** AA1 - Advanced Programming Practices  
+**Course:** Advanced Programming Practices | **Section:** H2  
 **Faculty:** Dr. Rajesh Kannan  
 **Team Members:** Shantnu, Arya Agrawal, Raiyan Kamal  
 

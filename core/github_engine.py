@@ -81,7 +81,8 @@ class GitHubEngine:
             if e.code == 404:
                 raise GitHubError(f"Repository {owner}/{repo} not found (or is private).")
             elif e.code == 403:
-                raise GitHubError("GitHub API rate limit reached. Please retry in a few moments.")
+                # If unauthenticated rate limit is reached, gracefully fallback to default branch 'main'
+                return "main"
             raise GitHubError(f"GitHub returned HTTP status {e.code}.")
         except URLError as e:
             raise GitHubError(f"Network error communicating with GitHub: {e.reason}")

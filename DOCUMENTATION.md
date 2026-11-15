@@ -1,7 +1,7 @@
 # RepoGuard: Software Supply Chain & Vulnerability Intelligence Suite
 ## Comprehensive Technical Project Documentation & Implementation Analysis
 
-**Course:** AA1 &mdash; Advanced Programming Practices  
+**Course:** Advanced Programming Practices &mdash; **Section:** H2  
 **Faculty In-Charge:** Dr. Rajesh Kannan  
 **Project Repository:** https://github.com/Shantnu01/APP.git  
 

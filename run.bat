@@ -3,7 +3,7 @@ title RepoGuard - Vulnerability Auditor
 echo =======================================================
 echo   Launching RepoGuard Security & Dependency Auditor
 echo   Team: Shantnu, Arya Agrawal, Raiyan Kamal
-echo   Course: AA1 - Advanced Programming Practices
+echo   Course: Advanced Programming Practices (Section H2)
 echo =======================================================
 echo.
 
