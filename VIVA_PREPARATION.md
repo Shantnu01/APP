@@ -56,7 +56,7 @@
 ## 🎬 Recommended 3-Minute Live Demo Flow
 
 1. **Launch:** Double-click `run.bat` (or execute `python main.py`).
-2. **Demo Scan:** The input is preloaded with `https://github.com/pralav-25/reposentry-demo`. Click **"Run Security Audit"**.
+2. **Demo Scan:** The input is preloaded with `https://github.com/Shantnu01/APP`. Click **"Run Security Audit"**.
 3. **Observe Live Feedback:** Point out the live progress indicator and status ticker showing packages being scanned in parallel.
 4. **Explain Visualizations:**
    - Show the **Risk Gauge needle** pointing to the risk score and color category.

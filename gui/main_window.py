@@ -147,7 +147,7 @@ class MainWindow(tk.Tk):
             insertbackground="#38BDF8", relief="flat", highlightthickness=1, highlightbackground="#475569"
         )
         self.entry_url.pack(side="left", fill="x", expand=True, padx=(0, 10), ipady=4)
-        self.entry_url.insert(0, "https://github.com/pralav-25/reposentry-demo")
+        self.entry_url.insert(0, "https://github.com/Shantnu01/APP")
 
         self.btn_scan = tk.Button(
             bar, text="Run Security Audit", font=("Segoe UI", 9, "bold"),
@@ -158,10 +158,10 @@ class MainWindow(tk.Tk):
 
         # Quick Demo Preset button
         btn_preset = tk.Button(
-            bar, text="Demo URL", font=("Segoe UI", 9),
+            bar, text="Default Repo", font=("Segoe UI", 9),
             bg="#334155", fg="#CBD5E1", activebackground="#475569", activeforeground="#FFFFFF",
             relief="flat", padx=10, pady=4, cursor="hand2",
-            command=lambda: self._set_demo_url("https://github.com/pralav-25/reposentry-demo")
+            command=lambda: self._set_demo_url("https://github.com/Shantnu01/APP")
         )
         btn_preset.pack(side="left")
 

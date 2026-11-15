@@ -122,29 +122,29 @@ chmod +x run.sh
 You can run automated security audits directly from your terminal:
 ```bash
 # Output summary to console
-python main.py --cli https://github.com/pralav-25/reposentry-demo
+python main.py --cli https://github.com/Shantnu01/APP
 
 # Generate a standalone executive HTML report directly
-python main.py --cli https://github.com/pralav-25/reposentry-demo --format html
+python main.py --cli https://github.com/Shantnu01/APP --format html
 ```
 
 ---
 
 ## 🧪 Demo Repositories for Testing
 
-Paste any of these public repositories into RepoGuard to test multi-ecosystem scanning:
+Paste any public GitHub repository into RepoGuard to test multi-ecosystem scanning:
 
-1. **Multi-Ecosystem Vulnerability Benchmark:**
+1. **Target Repository Audit:**
    ```
-   https://github.com/pralav-25/reposentry-demo
+   https://github.com/Shantnu01/APP
    ```
-   *Contains intentionally pinned vulnerable Python and Maven dependencies demonstrating real OSV advisories.*
+   *Scans the repository's declared dependencies, resolving packages against real-time OSV advisories.*
 
-2. **Node.js / npm Direct Pins:**
+2. **Any Public GitHub Repository:**
    ```
-   https://github.com/pralav-25/interleave
+   https://github.com/pallets/flask
    ```
-   *Demonstrates direct semantic version parsing in `package.json`.*
+   *Demonstrates direct Python and web dependency auditing.*
 
 ---
 
