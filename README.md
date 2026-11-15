@@ -8,7 +8,7 @@
 
 > **Academic Project Submission**  
 > **Course:** AA1 &mdash; Advanced Programming Practices  
-> **Faculty Guide:** Prof. Salomi Samsudeen  
+> **Faculty Guide:** Dr. Rajesh Kannan  
 > **Development Team:**
 > - **Shantnu** (Team Lead & Core Backend Architect)
 > - **Arya Agrawal** (Frontend GUI & Data Visualization Engineer)
