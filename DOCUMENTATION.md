@@ -2,7 +2,7 @@
 ## Comprehensive Technical Project Documentation & Implementation Analysis
 
 **Course:** AA1 &mdash; Advanced Programming Practices  
-**Faculty In-Charge:** Prof. Salomi Samsudeen  
+**Faculty In-Charge:** Dr. Rajesh Kannan  
 **Project Repository:** https://github.com/Shantnu01/APP.git  
 
 **Project Team Members:**

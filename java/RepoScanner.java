@@ -23,7 +23,7 @@ import org.w3c.dom.NodeList;
  * Strictly operates in a secure sandbox mode with external entities disabled.
  *
  * Authors: Shantnu, Arya Agrawal, Raiyan Kamal
- * Course: AA1 - Advanced Programming Practices | Prof. Salomi Samsudeen
+ * Course: AA1 - Advanced Programming Practices | Dr. Rajesh Kannan
  */
 public final class RepoScanner {
 

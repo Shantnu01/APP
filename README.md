@@ -158,4 +158,4 @@ python -m unittest discover -s tests
 ---
 
 ## 📜 Academic Integrity & Disclaimer
-This project was developed strictly for academic demonstration in **Course AA1 - Advanced Programming Practices** under the guidance of **Prof. Salomi Samsudeen**. It reports known published CVE and GHSA advisories from the OSV database and is designed to teach secure software engineering, multi-threading, inter-language process integration, and data visualization.
+This project was developed strictly for academic demonstration in **Course AA1 - Advanced Programming Practices** under the guidance of **Dr. Rajesh Kannan**. It reports known published CVE and GHSA advisories from the OSV database and is designed to teach secure software engineering, multi-threading, inter-language process integration, and data visualization.

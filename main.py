@@ -3,7 +3,7 @@
 RepoGuard - Multi-Ecosystem Repository Security & Dependency Vulnerability Auditor
 
 Course: AA1 - Advanced Programming Practices
-Faculty: Prof. Salomi Samsudeen
+Faculty: Dr. Rajesh Kannan
 Development Team:
 - Shantnu (Team Lead & Core Backend Architect)
 - Arya Agrawal (Frontend GUI & Data Visualization Engineer)

@@ -4,7 +4,7 @@ Comprehensive Tkinter GUI incorporating dynamic Canvas charts, multi-threaded
 background execution, search/filter controls, and multi-format export capabilities.
 
 Authors: Shantnu, Arya Agrawal, Raiyan Kamal
-Course: AA1 - Advanced Programming Practices | Prof. Salomi Samsudeen
+Course: AA1 - Advanced Programming Practices | Dr. Rajesh Kannan
 """
 
 from __future__ import annotations
@@ -367,7 +367,7 @@ class MainWindow(tk.Tk):
         box.pack(fill="both", expand=True, padx=15, pady=15)
 
         tk.Label(box, text="RepoGuard: Multi-Ecosystem Security & Dependency Auditor", font=("Segoe UI", 16, "bold"), fg="#38BDF8", bg="#1E293B").pack(anchor="w")
-        tk.Label(box, text="Course: AA1 - Advanced Programming Practices  |  Faculty: Prof. Salomi Samsudeen", font=("Segoe UI", 11, "bold"), fg="#CBD5E1", bg="#1E293B").pack(anchor="w", pady=(4, 15))
+        tk.Label(box, text="Course: AA1 - Advanced Programming Practices  |  Faculty: Dr. Rajesh Kannan", font=("Segoe UI", 11, "bold"), fg="#CBD5E1", bg="#1E293B").pack(anchor="w", pady=(4, 15))
 
         desc = (
             "RepoGuard is an advanced desktop software quality and security audit suite designed to inspect public "
