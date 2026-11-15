@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Java build output
+build/
+*.class
+
+# Local SQLite databases
+*.db
+*.sqlite3
+
+# Test exports
+*.csv
+*report.json
+*report.html
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment and IDEs
+.env
+.venv
+env/
+venv/
+.idea/
+.vscode/
