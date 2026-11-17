@@ -130,26 +130,43 @@ class RiskMetrics:
                 else:
                     unk += 1
 
-        # Calculate weighted composite risk score (0 to 100)
-        # Weights: Critical=10, High=6, Moderate=3, Low=1, Unknown=1.5
-        raw_score = (crit * 10.0) + (high * 6.0) + (mod * 3.0) + (low * 1.0) + (unk * 1.5)
-        # Scale logarithmically/proportionally to cap at 100
-        if total_deps > 0:
-            weighted_density = (raw_score / total_deps) * 20.0
-            risk_score = min(100.0, max(0.0, weighted_density))
-        else:
+        # Calculate balanced security posture risk score (0 to 100)
+        if total_deps == 0 or (vuln_deps == 0 and total_vulns == 0):
             risk_score = 0.0
-
-        if crit > 0 or risk_score >= 75.0:
-            risk_rating = "Critical"
-        elif high > 0 or risk_score >= 50.0:
-            risk_rating = "High"
-        elif mod > 0 or risk_score >= 25.0:
-            risk_rating = "Moderate"
-        elif low > 0 or risk_score > 0.0:
-            risk_rating = "Low"
-        else:
             risk_rating = "Safe"
+        else:
+            # 1. Base proportion of infected libraries (0 to 35 pts)
+            vuln_ratio = vuln_deps / total_deps
+            base_points = vuln_ratio * 35.0
+
+            # 2. Peak severity impact factor (0 to 45 pts)
+            if crit > 0:
+                sev_points = 35.0 + min(10.0, (crit - 1) * 0.8)
+            elif high > 0:
+                sev_points = 24.0 + min(8.0, (high - 1) * 0.5)
+            elif mod > 0:
+                sev_points = 14.0 + min(6.0, (mod - 1) * 0.5)
+            elif low > 0:
+                sev_points = 7.0 + min(4.0, (low - 1) * 0.5)
+            else:
+                sev_points = 5.0
+
+            # 3. Advisory volume/density factor (0 to 20 pts)
+            volume_factor = min(20.0, ((crit * 2.5 + high * 1.5 + mod * 0.8 + low * 0.3) / max(1, vuln_deps)) * 2.0)
+
+            risk_score = min(100.0, max(0.0, base_points + sev_points + volume_factor))
+            risk_score = round(risk_score, 1)
+
+            if risk_score >= 75.0 or crit > 0:
+                risk_rating = "Critical"
+            elif risk_score >= 50.0 or high > 0:
+                risk_rating = "High"
+            elif risk_score >= 25.0 or mod > 0:
+                risk_rating = "Moderate"
+            elif risk_score > 0.0 or low > 0:
+                risk_rating = "Low"
+            else:
+                risk_rating = "Safe"
 
         return cls(
             total_dependencies=total_deps,

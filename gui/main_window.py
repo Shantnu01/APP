@@ -205,7 +205,7 @@ class MainWindow(tk.Tk):
         gauge_box = tk.Frame(viz_row, bg="#1E293B", highlightthickness=1, highlightbackground="#334155", padx=10, pady=8)
         gauge_box.pack(side="left", padx=(0, 10))
         tk.Label(gauge_box, text="SECURITY RISK METER", font=("Segoe UI", 8, "bold"), fg="#94A3B8", bg="#1E293B").pack(anchor="w")
-        self.gauge = RiskGaugeCanvas(gauge_box, width=220, height=105, bg="#1E293B")
+        self.gauge = RiskGaugeCanvas(gauge_box, width=240, height=130, bg="#1E293B")
         self.gauge.pack()
 
         # Severity Breakdown Bar Canvas
@@ -416,6 +416,7 @@ class MainWindow(tk.Tk):
         self.progress.config(mode="indeterminate")
         self.progress.start(10)
         self.lbl_status.config(text=f"Connecting to GitHub: {url}...")
+        self.gauge.set_score(0.0, "Auditing...")
 
         # Spawn daemon thread to avoid blocking Tkinter main loop
         self.scan_thread = threading.Thread(target=self._run_audit_pipeline, args=(url,), daemon=True)
